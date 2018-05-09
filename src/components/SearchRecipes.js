@@ -7,6 +7,8 @@ class SearchRecipes extends Component {
       <Form inline>
         <FormGroup>
           <ControlLabel>Ingredients</ControlLabel>
+          {''}
+          <FormControl type="text" placeholder="garlic, chicken" />
         </FormGroup>
         {''}
         <FormGroup>
