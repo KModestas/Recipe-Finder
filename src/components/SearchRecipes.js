@@ -16,6 +16,8 @@ class SearchRecipes extends Component {
           {' '}
           <FormControl type="text" placeholder="adobo" />
         </FormGroup>
+        {' '}
+        <Button>Submit</Button>
       </Form>
     );
   }
