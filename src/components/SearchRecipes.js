@@ -12,6 +12,7 @@ class SearchRecipes extends Component {
         </FormGroup>
         {''}
         <FormGroup>
+          <ControlLabel>Dish</ControlLabel>
         </FormGroup>
       </Form>
     );
