@@ -7,12 +7,13 @@ class SearchRecipes extends Component {
       <Form inline>
         <FormGroup>
           <ControlLabel>Ingredients</ControlLabel>
-          {''}
+          {' '}
           <FormControl type="text" placeholder="garlic, chicken" />
         </FormGroup>
-        {''}
+        {' '}
         <FormGroup>
           <ControlLabel>Dish</ControlLabel>
+          {' '}
           <FormControl type="text" placeholder="adobo" />
         </FormGroup>
       </Form>
