@@ -13,6 +13,7 @@ class SearchRecipes extends Component {
         {''}
         <FormGroup>
           <ControlLabel>Dish</ControlLabel>
+          <FormControl type="text" placeholder="adobo" />
         </FormGroup>
       </Form>
     );
