@@ -6,6 +6,7 @@ class SearchRecipes extends Component {
     return(
       <Form inline>
         <FormGroup>
+          <ControlLabel>Ingredients</ControlLabel>
         </FormGroup>
         {''}
         <FormGroup>
