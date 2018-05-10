@@ -14,8 +14,8 @@ class SearchRecipes extends Component {
   // seen as this is the only component that will utilise this data, adding a local state is fine
 
   search() {
-    const url = 'http://www.recipepuppy.com/api/';
-    console.log(this.state);
+    const url = `http://www.recipepuppy.com/api/?i=${this.state.ingredients}&q=${this.state.dish}`;
+    console.log(this.state, url);
   }
 
   render() {
