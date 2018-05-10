@@ -15,6 +15,7 @@ class SearchRecipes extends Component {
 
   search() {
     const url = 'http://www.recipepuppy.com/api/';
+    console.log(this.state);
   }
 
   render() {
@@ -23,16 +24,24 @@ class SearchRecipes extends Component {
         <FormGroup>
           <ControlLabel>Ingredients</ControlLabel>
           {' '}
-          <FormControl type="text" placeholder="garlic, chicken" />
+          <FormControl
+            type="text"
+            placeholder="garlic, chicken"
+            onChange={e => this.setState({ingredients: e.target.value})}
+          />
         </FormGroup>
         {' '}
         <FormGroup>
           <ControlLabel>Dish</ControlLabel>
           {' '}
-          <FormControl type="text" placeholder="adobo" />
+          <FormControl
+            type="text"
+            placeholder="adobo"
+            onChange={e => this.setState({dish: e.target.value})}
+          />
         </FormGroup>
         {' '}
-        <Button>Submit</Button>
+        <Button onClick={()=> this.search()}>Submit</Button>
       </Form>
     );
   }
