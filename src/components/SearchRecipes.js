@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { Form, FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
 
 class SearchRecipes extends Component {
+
+  search() {
+    const url = 'http://www.recipepuppy.com/api/';
+  }
+
   render() {
     return(
       <Form inline>
