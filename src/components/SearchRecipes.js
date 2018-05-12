@@ -24,7 +24,9 @@ class SearchRecipes extends Component {
       method: 'GET'
     })
       .then(res => res.json())
-      .then(json => console.log(json));
+      .then(json => {
+        this.props.setRecipes(json.results);
+      });
   }
 
   render() {
@@ -56,4 +58,4 @@ class SearchRecipes extends Component {
   }
 }
 
-export default connect(null, {setRecipes })(SearchRecipes);
+export default connect(null,{ setRecipes })(SearchRecipes);
