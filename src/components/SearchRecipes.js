@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Form, FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
+import { setRecipes } from '../actions';
 
 class SearchRecipes extends Component {
   constructor() {
@@ -54,4 +56,4 @@ class SearchRecipes extends Component {
   }
 }
 
-export default SearchRecipes;
+export default connect(null, {setRecipes })(SearchRecipes);
