@@ -6,7 +6,17 @@ class RecipeList extends Component {
     console.log('this.props', this.props);
 
     return(
-      <div></div>
+      <div>
+        {
+          this.props.recipes.map((recipe, i) => {
+            return(
+              <div key={i}>
+                <h4>{recipe.title}</h4>
+              </div>
+            );
+          })
+        }
+      </div>
     );
   }
 }
