@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 
 class RecipeItem extends Component {
+
   render() {
+
+    const { recipe } = this.props;
+
     return(
-      <h4>{this.props.recipe.title}</h4>
+      <div>
+        <a href={recipe.href}>
+          <h4>{recipe.title}</h4>
+        </a>
+      </div>
     );
   }
 }
