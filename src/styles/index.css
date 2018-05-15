@@ -25,6 +25,7 @@ body {
   width: 100px;
   height: 100px;
   object-fit: cover;
+  /*object fit prserves img aspect ratio when resized. prevents stretched imgs*/
   border: 1px solid black;
   border-radius: 2px;
 }
