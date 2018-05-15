@@ -10,3 +10,11 @@ body {
   margin: 10px;
   padding: 5px;
 }
+
+
+.recipe-text {
+  display: inline-block;
+  padding-right: 10px;
+  text-align: left;
+  width: 400px;
+}
